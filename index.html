@@ -63,6 +63,7 @@
         align-items: center;
         justify-content: space-between;
         height: 68px;
+        gap: 12px;
       }
 
       .brand {
@@ -96,6 +97,7 @@
         gap: 20px;
         font-size: 0.9rem;
         color: var(--muted);
+        flex-wrap: wrap;
       }
 
       nav a:hover {
@@ -362,6 +364,26 @@
           grid-template-columns: repeat(3, 1fr);
         }
       }
+
+      @media (max-width: 820px) {
+        .nav {
+          flex-wrap: wrap;
+          height: auto;
+          padding: 12px 0 16px;
+        }
+
+        nav {
+          width: 100%;
+          justify-content: center;
+          gap: 14px;
+          font-size: 0.85rem;
+        }
+
+        .cta {
+          width: 100%;
+          text-align: center;
+        }
+      }
     </style>
   </head>
   <body>
@@ -377,6 +399,7 @@
           <a href="#company">会社概要</a>
           <a href="#services">事業内容</a>
           <a href="#recruit">採用</a>
+          <a href="#privacy">個人情報保護</a>
           <a href="#contact">お問い合わせ</a>
         </nav>
         <a class="cta" href="#contact">お問い合わせ</a>
@@ -521,6 +544,53 @@
           <div class="card">
             <h3>エコー検査技師</h3>
             <p>巡回健診の現場でエコー検査を担当します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <div class="section-title">個人情報保護</div>
+        <p class="section-lead">
+          HOZU株式会社は、個人情報の保護を重要な責務と捉え、適切な管理と安全対策に努めます。
+        </p>
+        <div class="cards">
+          <div class="card">
+            <h3>個人情報の管理</h3>
+            <p>
+              個人情報は正確かつ最新の状態を保つよう努め、不正アクセスや紛失、改ざん、漏えいを防止するための安全対策を実施します。
+            </p>
+          </div>
+          <div class="card">
+            <h3>利用目的</h3>
+            <p>
+              お問い合わせへの対応、業務のご案内、ご連絡に必要な範囲で個人情報を利用します。
+            </p>
+          </div>
+          <div class="card">
+            <h3>第三者への提供</h3>
+            <p>
+              法令に基づく場合などを除き、本人の同意なく第三者へ個人情報を開示・提供しません。
+            </p>
+          </div>
+          <div class="card">
+            <h3>安全対策</h3>
+            <p>
+              情報の正確性と安全性を確保するため、必要かつ適切な安全管理措置を講じます。
+            </p>
+          </div>
+          <div class="card">
+            <h3>ご本人の照会</h3>
+            <p>
+              開示・訂正・削除等のご希望がある場合は、ご本人確認の上で対応します。
+            </p>
+          </div>
+          <div class="card">
+            <h3>法令遵守と見直し</h3>
+            <p>
+              関連法令や規範を遵守し、内容は適宜見直し改善します。
+            </p>
           </div>
         </div>
       </div>
